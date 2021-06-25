@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button onclick="markscl()" class = "btn">
+        Click Me
+    </button>
+
+    
+    <script>
+        function markscl() {
+            let marks = prompt('Please enter your marks from(0-100)');
+
+            if (marks >= 90 && marks <= 100) {
+                alert("Congrats! you got the top ranking in your class!")
+            }
+
+            else if (marks >= 80 && marks <= 90) {
+                alert("Congrats! You are in the top 10 list!!");
+            }
+            else if (marks >= 60 && marks <= 80) {
+                alert("Congrats! You got 1nd Div!")
+            }
+            else if (marks >= 50 && marks <= 60) {
+                alert("Congrats! You got 2nd Div!")
+            }
+            else if (marks >= 35 && marks <= 45) {
+                alert("Congrats! You got 3rd Div")
+            }
+            else if (marks >= 0 && marks <= 30) {
+                alert("We're sorry to let you hear that you have failed. Please try harder next time.")
+            }
+            else {
+                alert("Please enter a valid number.")
+            }
+        };
+
+    </script>
+</body>
+
+</html>
